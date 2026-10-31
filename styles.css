@@ -300,8 +300,8 @@ body {
   }
 
   .world__stage {
-    width: 100%;
-    max-width: 100%;
+    width: auto;
+    max-width: none;
     overflow: hidden;
   }
 
