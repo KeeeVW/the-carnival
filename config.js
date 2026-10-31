@@ -9,7 +9,7 @@ window.EVENT_CONFIG = {
   venueName: "Collège Patriarcal (ex: Frères)",
   venueAddress: "",
   ticketPrice: "",
-  ticketFormUrl: "",
+  ticketFormUrl: "https://forms.gle/erTmHhZyXednjZBr8",
   contactEmail: "",
   groupLogoPath: "assets/images/group-10-logo.png",
   venueLogoPath: "assets/images/venue-logo.png",
