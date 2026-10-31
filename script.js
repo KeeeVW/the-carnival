@@ -28,7 +28,7 @@
   text(".js-address", config.venueAddress || "The Carnival grounds");
   const price = $(".js-price");
   if (price) price.innerHTML = "150 Till 13/11<br>175 Till 20/11<br>On door 200";
-  text(".js-contact", config.contactEmail || "01273335340");
+  text(".js-contact", config.contactEmail || "01275336589");
   $("#year").textContent = new Date().getFullYear();
 
   const navToggle = $(".nav-toggle");
