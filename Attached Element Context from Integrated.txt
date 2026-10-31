@@ -1,0 +1,68 @@
+Attached Element Context from Integrated Browser
+
+Element: div.world__stage
+
+URL: file:///d%3A/New%20folder%20%285%29/index.html
+
+HTML Path: section#world.world.section > div.world__stage
+
+Outer HTML:
+```html
+<div class="world__stage">
+        <img class="world__artwork" src="assets/images/carnival-artwork.png" alt="" aria-hidden="true" loading="lazy">
+        <div class="tent tent--left"></div><div class="tent tent--right"></div><div class="world__sign">THE<br><strong>CARNIVAL</strong></div>
+        <div class="world__lights"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <img class="world__mascot js-mascot" src="assets/images/xman-new.png" alt="" loading="lazy">
+      </div>
+```
+
+Dimensions:
+- top: 81px
+- left: 0px
+- width: 901px
+- height: 500px
+
+CSS:
+```css
+* { box-sizing:border-box }
+* { cursor: default !important; }
+.world__stage { height:500px;position:relative;margin:4rem -8vw -9rem;background:linear-gradient(to top,#080607,transparent),radial-gradient(ellipse at 50% 20%,rgba(168,47,25,.35),transparent 50%) }
+
+/* Pseudo-elements */
+.world__stage:before { content:"";position:absolute;inset:0;background:linear-gradient(to top,#080607 0%,transparent 42%),radial-gradient(ellipse at 50% 20%,rgba(168,47,25,.35),transparent 50%);z-index:1 }
+
+/* Inherited */
+* { cursor: default !important }
+body { color:var(--paper); font-family:var(--sans) }
+
+/* Resolved values */
+margin: 64px -73.28px -144px;
+background-attachment: scroll, scroll;
+background-clip: border-box, border-box;
+background-color: rgba(0, 0, 0, 0);
+background-image: linear-gradient(to top, rgb(8, 6, 7), rgba(0, 0, 0, 0)), radial-gradient(at 50% 20%, rgba(168, 47, 25, 0.35), rgba(0, 0, 0, 0) 50%);
+background-origin: padding-box, padding-box;
+background-position-x: 0%, 0%;
+background-position-y: 0%, 0%;
+background-repeat: repeat, repeat;
+background-size: auto, auto;
+bottom: 0px;
+box-sizing: border-box;
+color: rgb(239, 232, 216);
+content: normal;
+cursor: default;
+display: block;
+font-family: Manrope, Arial, sans-serif;
+height: 500px;
+left: 0px;
+position: relative;
+right: 0px;
+top: 0px;
+unicode-bidi: isolate /*UA*/;
+width: 900.8px;
+z-index: auto;
+
+/* CSS variables */
+--paper: #efe8d8;
+--sans: 'Manrope',Arial,sans-serif;
+```

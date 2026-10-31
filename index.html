@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090709">
+  <meta name="description" content="The Carnival — Wadi El-Nile Scouts & Guides Group 10.">
+  <meta property="og:title" content="The Carnival | Group 10">
+  <meta property="og:description" content="Step beyond the ordinary. Enter the Carnival.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/social-preview.jpg">
+  <title>The Carnival | Group 10</title>
+  <link rel="icon" href="assets/icons/portal.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__portal"><span></span><span></span><span></span></div>
+    <p>GROUP <b>10</b></p>
+  </div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="The Carnival home"><span class="brand__mark">10</span><span>WADI EL-NILE<br><small>SCOUTS &amp; GUIDES</small></span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#world">The world</a><a href="#activities">Attractions</a><a href="#details">Details</a><a href="#trailer">Trailer</a>
+    </nav>
+    <a class="button button--small js-booking" href="#" target="_blank" rel="noopener noreferrer">Book your ticket <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section--dark">
+      <div class="hero__backdrop"></div><div class="hero__rays"></div><div class="hero__bunting" aria-hidden="true"></div>
+      <div class="hero__portal" aria-hidden="true"><div class="portal-ring portal-ring--outer"></div><div class="portal-ring portal-ring--inner"></div><div class="portal-core"></div></div>
+      <div class="hero__copy reveal">
+        <p class="eyebrow"><span></span> An invitation from beyond</p>
+        <h1>The<br><em>Carnival</em></h1>
+        <p class="hero__tagline js-tagline">A vintage night of wonder, light, and adventure.</p>
+        <div class="hero__date"><span>FRI</span><strong>20</strong><span>NOVEMBER<br>2026</span></div>
+        <div class="hero__actions"><a class="button js-booking" href="#" target="_blank" rel="noopener noreferrer">Enter the Carnival <span>↗</span></a><a class="text-link" href="#world">Explore the world <span>↓</span></a></div>
+      </div>
+      <div class="hero__mascot reveal reveal--late"><div class="mascot-halo"></div><img class="js-mascot" src="assets/images/xman-new.png" alt="The Carnival's original X-Man mascot"></div>
+      <div class="hero__footer"><span>WADI EL-NILE / GROUP 10</span><span class="scroll-cue">Scroll to cross <i></i></span><span>EST. 2026</span></div>
+    </section>
+
+    <section class="portal-transition" aria-hidden="true"><div class="transition-ring"></div><p>Crossing over</p></section>
+
+    <section id="world" class="world section">
+      <div class="section__grid">
+        <div class="section__intro reveal"><p class="eyebrow eyebrow--gold"><span></span> Beyond the threshold</p><h2>A night<br>outside <em>time.</em></h2></div>
+        <div class="section__statement reveal"><p>One portal. A thousand possibilities. The old world fades, the lights rise, and Group 10 invites you into a celebration made for discovery.</p><div class="stamp">G10<br><small>THE CARNIVAL</small></div></div>
+      </div>
+      <div class="world__stage">
+        <img class="world__artwork" src="assets/images/carnival-artwork.png" alt="" aria-hidden="true" loading="lazy">
+        <div class="tent tent--left"></div><div class="tent tent--right"></div><div class="world__sign">THE<br><strong>CARNIVAL</strong></div>
+        <div class="world__lights"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <img class="world__mascot js-mascot" src="assets/images/xman-new.png" alt="" loading="lazy">
+      </div>
+    </section>
+
+    <section id="details" class="details section section--dark">
+      <div class="section__heading reveal"><p class="eyebrow"><span></span> Mark your passage</p><h2>Everything<br>you need to <em>know.</em></h2></div>
+      <div class="details__layout">
+        <div class="countdown-wrap reveal"><p class="eyebrow eyebrow--gold">The gates open in</p><div class="countdown" aria-live="polite"><div><strong data-count="days">—</strong><span>Days</span></div><b>:</b><div><strong data-count="hours">—</strong><span>Hours</span></div><b>:</b><div><strong data-count="minutes">—</strong><span>Minutes</span></div><b>:</b><div><strong data-count="seconds">—</strong><span>Seconds</span></div></div></div>
+        <div class="info-grid reveal reveal--late">
+          <div class="info-card"><span class="info-card__label">When</span><strong class="js-date">Friday, November 20, 2026</strong><span class="js-time">12:00 PM — 9:00 PM</span></div>
+          <div class="info-card"><span class="info-card__label">Where</span><img class="venue-logo" src="assets/images/venue-logo.png" alt="Scouts and Guides Wadi El-Nil venue mark" loading="lazy"><strong class="js-venue">Collège Patriarcal (ex: Frères)</strong><span class="js-address">The Carnival grounds</span></div>
+          <div class="info-card"><span class="info-card__label">Tickets</span><strong class="js-price">Details to be announced</strong><span>Booking opens soon</span></div>
+          <div class="info-card"><span class="info-card__label">Questions?</span><strong class="js-contact">Contact to be announced</strong><span>We’ll help you find the way</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities" class="activities section section--dark">
+      <div class="section__heading reveal"><p class="eyebrow eyebrow--gold"><span></span> Under the big top</p><h2>Find your<br><em>way in.</em></h2><p class="section__lede">Nine reasons to follow the lights. Every corner of the Carnival has a story, a sound, or a surprise waiting for you.</p></div>
+      <div class="activity-grid">
+        <article class="activity-card reveal"><div class="activity-art activity-art--games">✦</div><span class="card-number">01 / PLAY</span><h3>Carnival Games</h3><p>Classic carnival challenges with a Group 10 twist.</p></article>
+        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--band">♬</div><span class="card-number">02 / SOUND</span><h3>Marching Band</h3><p>Follow the brass, drums, and rhythm through the grounds.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--scout">⚜</div><span class="card-number">03 / SPIRIT</span><h3>Scout Performances</h3><p>Energy, talent, and the unmistakable scouting spirit.</p></article>
+        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--bazaar">✧</div><span class="card-number">04 / DISCOVER</span><h3>Bazaar</h3><p>Wander through a colorful market of finds and surprises.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--food">✺</div><span class="card-number">05 / TASTE</span><h3>Street Food</h3><p>Follow the warm lights and delicious festival aromas.</p></article>
+        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--prizes">★</div><span class="card-number">06 / WIN</span><h3>Games and Prizes</h3><p>Bring your luck, play along, and leave with a story.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--photo">◉</div><span class="card-number">07 / CAPTURE</span><h3>Photo Booths</h3><p>Make the night part of your photo album forever.</p></article>
+        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--tombola">●</div><span class="card-number">08 / CHANCE</span><h3>Tombola</h3><p>A little suspense, a little luck, and a lot of fun.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--music">♫</div><span class="card-number">09 / LIVE</span><h3>Live Music</h3><p>Stay for the songs that keep the Carnival glowing.</p></article>
+      </div>
+    </section>
+
+    <section id="trailer" class="trailer section">
+      <div class="section__heading reveal"><p class="eyebrow eyebrow--gold"><span></span> The next chapter</p><h2>Watch the<br><em>portal open.</em></h2></div>
+      <div class="video-frame reveal"><div class="video-frame__fallback"><span class="video-frame__glyph">▶</span><p>Official trailer<br><small>Coming soon</small></p></div><video class="js-trailer" controls preload="none" playsinline></video></div>
+    </section>
+
+    <section class="experience section section--cream">
+      <div class="section__heading reveal"><p class="eyebrow eyebrow--dark"><span></span> What awaits</p><h2>More than an event.<br><em>An experience.</em></h2></div>
+      <div class="cards">
+        <article class="experience-card reveal"><span class="card-number">01</span><div class="card-art card-art--portal"></div><h3>The Carnival</h3><p>A world of light, mystery, and moments waiting to be discovered.</p></article>
+        <article class="experience-card reveal reveal--late"><span class="card-number">02</span><div class="card-art card-art--spark"></div><h3>The Adventure</h3><p>A shared journey shaped by curiosity, courage, and the scouting spirit.</p></article>
+        <article class="experience-card reveal"><span class="card-number">03</span><div class="card-art card-art--star"></div><h3>The Gathering</h3><p>Come together with Group 10 and make a memory that lasts beyond the night.</p></article>
+      </div>
+    </section>
+
+    <section class="closing section section--dark">
+      <div class="closing__portal" aria-hidden="true"></div><p class="eyebrow reveal"><span></span> Your passage awaits</p><h2 class="reveal">Ready to<br><em>cross over?</em></h2><a class="button reveal js-booking" href="#" target="_blank" rel="noopener noreferrer">Book your ticket <span>↗</span></a><p class="closing__note js-booking-note">Booking details will be announced soon.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="brand"><span class="brand__mark">10</span><span>WADI EL-NILE<br><small>SCOUTS &amp; GUIDES</small></span></div><p>THE CARNIVAL © <span id="year"></span></p><button class="back-top" type="button" aria-label="Back to top">↑</button></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
