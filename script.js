@@ -26,9 +26,25 @@
   text(".js-time", config.eventStartTime ? `${formatTime(config.eventStartTime)}${config.eventEndTime ? ` — ${formatTime(config.eventEndTime)}` : ""}` : "Time to be announced");
   text(".js-venue", config.venueName || "Venue to be announced");
   text(".js-address", config.venueAddress || "The Carnival grounds");
-  text(".js-price", config.ticketPrice || "Details to be announced");
-  text(".js-contact", config.contactEmail || "Contact to be announced");
+  const price = $(".js-price");
+  if (price) price.innerHTML = "150 Till 13/11<br>175 Till 20/11<br>On door 200";
+  text(".js-contact", config.contactEmail || "01273335340");
   $("#year").textContent = new Date().getFullYear();
+
+  const navToggle = $(".nav-toggle");
+  const siteNav = $(".site-nav");
+  if (navToggle && siteNav) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = document.body.classList.toggle("nav-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+      navToggle.textContent = isOpen ? "Close" : "Menu";
+    });
+    $$(".site-nav a").forEach((link) => link.addEventListener("click", () => {
+      document.body.classList.remove("nav-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.textContent = "Menu";
+    }));
+  }
 
   const bookingUrl = safeUrl(config.ticketFormUrl);
   $$(".js-booking").forEach((button) => {
