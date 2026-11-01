@@ -80,6 +80,21 @@
     if (exists && frame && video) { video.src = config.trailerVideoPath; frame.classList.add("has-video"); }
   });
 
+  $$(".activity-art[data-slideshow]").forEach((slideshow) => {
+    const slides = $$("img", slideshow);
+    if (slides.length < 2) {
+      slides.forEach((slide) => slide.classList.add("is-active"));
+      return;
+    }
+    let activeIndex = 0;
+    slides[0].classList.add("is-active");
+    window.setInterval(() => {
+      slides[activeIndex].classList.remove("is-active");
+      activeIndex = (activeIndex + 1) % slides.length;
+      slides[activeIndex].classList.add("is-active");
+    }, 3500);
+  });
+
   const countdown = $(".countdown");
   if (config.enableCountdown && config.eventDate && countdown) {
     const target = new Date(`${config.eventDate}T${config.eventStartTime || "00:00"}:00`);

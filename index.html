@@ -22,7 +22,7 @@
   <canvas id="particle-canvas" aria-hidden="true"></canvas>
   <div class="cursor-glow" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="The Carnival home"><span class="brand__mark">10</span><span>WADI EL-NILE<br><small>SCOUTS &amp; GUIDES</small></span></a>
+    <a class="brand" href="#top" aria-label="The Carnival home"><span>WADI EL-NILE<br><small>SCOUTS &amp; GUIDES</small></span></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
       <a href="#world">The world</a><a href="#activities">Attractions</a><a href="#details">Details</a>
@@ -40,6 +40,11 @@
         <p class="hero__tagline js-tagline">A vintage night of wonder, light, and adventure.</p>
         <div class="hero__date"><span>FRI</span><strong>20</strong><span>NOVEMBER<br>2026</span></div>
         <div class="hero__actions"><a class="button js-booking" href="#" target="_blank" rel="noopener noreferrer">Enter the Carnival <span>↗</span></a><a class="text-link" href="#world">Explore the world <span>↓</span></a></div>
+      </div>
+      <div class="hero__organization reveal reveal--late">
+        <div class="hero__organization-glow"></div>
+        <img src="assets/images/group-10-logo.png" alt="Wadi El-Nile Scouts and Guides Group 10">
+        <span>Presented by Group 10</span>
       </div>
       <div class="hero__mascot reveal reveal--late"><div class="mascot-halo"></div><img class="js-mascot" src="assets/images/xman-new.png" alt="The Carnival's original X-Man mascot"></div>
       <div class="hero__footer"><span>WADI EL-NILE / GROUP X</span><span class="scroll-cue">Scroll to cross <i></i></span><span>EST. 2026</span></div>
@@ -104,15 +109,14 @@
     <section id="activities" class="activities section section--dark">
       <div class="section__heading reveal"><p class="eyebrow eyebrow--gold"><span></span> Under the big top</p><h2>Find your<br><em>way in.</em></h2><p class="section__lede">Nine reasons to follow the lights. Every corner of the Carnival has a story, a sound, or a surprise waiting for you.</p></div>
       <div class="activity-grid">
-        <article class="activity-card reveal"><div class="activity-art activity-art--games">✦</div><span class="card-number">01 / PLAY</span><h3>Carnival Games</h3><p>Classic carnival challenges with a Group X twist.</p></article>
-        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--band">♬</div><span class="card-number">02 / SOUND</span><h3>Marching Band</h3><p>Follow the brass, drums, and rhythm through the grounds.</p></article>
-        <article class="activity-card reveal"><div class="activity-art activity-art--scout">⚜</div><span class="card-number">03 / SPIRIT</span><h3>Scout Performances</h3><p>Energy, talent, and the unmistakable scouting spirit.</p></article>
-        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--bazaar">✧</div><span class="card-number">04 / DISCOVER</span><h3>Bazaar</h3><p>Wander through a colorful market of finds and surprises.</p></article>
-        <article class="activity-card reveal"><div class="activity-art activity-art--food">✺</div><span class="card-number">05 / TASTE</span><h3>Street Food</h3><p>Follow the warm lights and delicious festival aromas.</p></article>
-        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--prizes">★</div><span class="card-number">06 / WIN</span><h3>Games and Prizes</h3><p>Bring your luck, play along, and leave with a story.</p></article>
-        <article class="activity-card reveal"><div class="activity-art activity-art--photo">◉</div><span class="card-number">07 / CAPTURE</span><h3>Photo Booths</h3><p>Make the night part of your photo album forever.</p></article>
-        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--tombola">●</div><span class="card-number">08 / CHANCE</span><h3>Tombola</h3><p>A little suspense, a little luck, and a lot of fun.</p></article>
-        <article class="activity-card reveal"><div class="activity-art activity-art--music">♫</div><span class="card-number">09 / LIVE</span><h3>Live Music</h3><p>Stay for the songs that keep the Carnival glowing.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--games" data-slideshow><img src="assets/PICS/carnival%20games.jpg" alt="Carnival games"><img src="assets/PICS/carnival%20games%20(2).jpg" alt="Carnival games"></div><span class="card-number">01 / PLAY</span><h3>Carnival Games</h3><p>Classic carnival challenges with a Group X twist.</p></article>
+        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--band" data-slideshow><img src="assets/PICS/marching%20band%20(3).jpg" alt="Marching band"><img src="assets/PICS/marching%20band%20(4).jpg" alt="Marching band"><img src="assets/PICS/marching%20band%20(5).jpg" alt="Marching band"><img src="assets/PICS/marching%20band%20(6).jpg" alt="Marching band"><img src="assets/PICS/marching%20band%20(7).jpg" alt="Marching band"></div><span class="card-number">02 / SOUND</span><h3>Marching Band</h3><p>Follow the brass, drums, and rhythm through the grounds.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--scout" data-slideshow><img src="assets/PICS/scout%20performances.jpg" alt="Scout performances"><img src="assets/PICS/scout%20performances2.jpg" alt="Scout performances"><img src="assets/PICS/scout%20performances%20(2).jpg" alt="Scout performances"><img src="assets/PICS/scout%20performances%20(3).jpg" alt="Scout performances"><img src="assets/PICS/scout%20performances%20(4).jpg" alt="Scout performances"></div><span class="card-number">03 / SPIRIT</span><h3>Scout Performances</h3><p>Energy, talent, and the unmistakable scouting spirit.</p></article>
+        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--bazaar" data-slideshow><img src="assets/PICS/bazaars.jpg" alt="Bazaar"><img src="assets/PICS/bazaars%20(2).jpg" alt="Bazaar"><img src="assets/PICS/bazaars%20(3).jpg" alt="Bazaar"><img src="assets/PICS/bazaars%20(4).jpg" alt="Bazaar"></div><span class="card-number">04 / DISCOVER</span><h3>Bazaar</h3><p>Wander through a colorful market of finds and surprises.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--food" data-slideshow><img src="assets/PICS/street%20food.jpg" alt="Street food"></div><span class="card-number">05 / TASTE</span><h3>Street Food</h3><p>Follow the warm lights and delicious festival aromas.</p></article>
+        <article class="activity-card reveal reveal--late"><div class="activity-art activity-art--prizes" data-slideshow><img src="assets/PICS/sponsors.jpg" alt="Carnival sponsor stand"><img src="assets/PICS/sponsors%20(2).jpg" alt="Carnival sponsor stand"></div><span class="card-number">06 / WIN</span><h3>Sponsors</h3><p>Meet the partners who help bring the Carnival to life.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--music" data-slideshow><img src="assets/PICS/live%20music.jpg" alt="Live music"><img src="assets/PICS/live%20music%20(2).jpg" alt="Live music"><img src="assets/PICS/live%20music%20(3).jpg" alt="Live music"><img src="assets/PICS/live%20music%20(4).jpg" alt="Live music"><img src="assets/PICS/live%20music%20(5).jpg" alt="Live music"></div><span class="card-number">07 / LIVE</span><h3>Live Music</h3><p>Stay for the songs that keep the Carnival glowing.</p></article>
+        <article class="activity-card reveal"><div class="activity-art activity-art--tombola" data-slideshow><img src="assets/PICS/tombola.jpg" alt="Tombola"><img src="assets/PICS/tombola%20(2).jpg" alt="Tombola"><img src="assets/PICS/tombola%20(3).jpg" alt="Tombola"><img src="assets/PICS/tombola%20(4).jpg" alt="Tombola"></div><span class="card-number">08 / CHANCE</span><h3>Tombola</h3><p>A little suspense, a little luck, and a lot of fun.</p></article>
       </div>
     </section>
 
